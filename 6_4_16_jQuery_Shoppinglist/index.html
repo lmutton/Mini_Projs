@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ShoppingList</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+	<center>
+		<div id="header">
+			<h1>My Shopping List!</h1>
+		</div>
+		<div id="header2">
+			<h2>What I need:</h2>
+		</div>
+		<div class="wrapper">
+			<input id="name" type="text">
+			<button id="addOne">Add</button>
+			<button id="clear">Clear</button>
+			<div id="list">
+				<ul></ul>
+			</div>
+		</div>
+
+
+		<div id="footer">2016 lmutton</div>
+	</center>
+		
+		<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+		<script>
+			$("#addOne").click(function() {
+				var value = $("#name").val();
+				$("ul").append("<li>" + value + "</li>");
+				});
+			$("#clear").click(function(){
+				$("ul").empty();
+			});
+
+			
+			$("#list").on("click", "li", function(){
+				$(this).toggleClass('purchased');
+			});
+
+		</script>
+	</body>
+</html>

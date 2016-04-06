@@ -1,0 +1,50 @@
+li.purchased { 
+		text-decoration: line-through;
+		color: #D9674D;
+ }
+
+ body {
+ 	font-family: Arial, sans-serif;
+ 	
+ }
+
+ ul {
+ 	list-style-type: none;
+ 	font-weight: bold;
+
+ }
+
+ li {
+ 	font-size: 20px;
+ 	margin-bottom: 20px;
+ 	margin-right: 40px;
+ }
+
+h1 {
+	padding-bottom: 30px;
+	
+	t
+}
+
+
+ #addOne {
+ 	background-color: #5BDE5A;
+ 	border: 2px solid #4EBF4E;
+ 	border-radius: 2%;
+ 	color: white;
+ 	font-weight: bold;
+ }
+ #clear {
+ 	background-color: #EB6F54;
+ 	border: 2px solid #D9674D;
+ 	border-radius: 2%;
+ 	color: white;
+ 	font-weight: bold;
+ }
+
+
+  #footer {
+ 	bottom: 0px;
+ 	position: fixed;
+ 	width: 100%;
+ }
