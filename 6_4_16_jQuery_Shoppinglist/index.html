@@ -27,8 +27,18 @@
 
 		<div id="footer">2016 lmutton</div>
 	</center>
-		
-		
-		
+		<script>
+		$("#addOne").click(function() {
+				var value = $("#name").val();
+				$("ul").append("<li>" + value + "</li>");
+				});
+			$("#clear").click(function(){
+				$("ul").empty();
+			});
+			
+			$("#list").on("click", "li", function(){
+				$(this).toggleClass('purchased');
+			});	
+		</script>
 	</body>
 </html>
