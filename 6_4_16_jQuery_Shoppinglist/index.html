@@ -4,6 +4,7 @@
 		<title>ShoppingList</title>
 		<link rel="stylesheet" href="style.css">
 		<script src="jquery-1.12.0.min.js"></script>
+		<script src="myscript.js"></script>
 	</head>
 
 	<body>
@@ -28,20 +29,6 @@
 	</center>
 		
 		
-		<script>
-			$("#addOne").click(function() {
-				var value = $("#name").val();
-				$("ul").append("<li>" + value + "</li>");
-				});
-			$("#clear").click(function(){
-				$("ul").empty();
-			});
-
-			
-			$("#list").on("click", "li", function(){
-				$(this).toggleClass('purchased');
-			});
-
-		</script>
+		
 	</body>
 </html>
