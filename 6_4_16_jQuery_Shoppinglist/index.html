@@ -3,6 +3,8 @@
 	<head>
 		<title>ShoppingList</title>
 		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	
 	</head>
 
 	<body>
@@ -13,6 +15,7 @@
 		<div id="header2">
 			<h2>What I need:</h2>
 		</div>
+		<br><h5>(click on an item to complete)</h5>
 		<div class="wrapper">
 			<input id="name" type="text">
 			<button id="addOne">Add</button>
@@ -25,10 +28,8 @@
 
 		<div id="footer">2016 lmutton</div>
 	</center>
-		
-		<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
 		<script>
-			$("#addOne").click(function() {
+		$("#addOne").click(function() {
 				var value = $("#name").val();
 				$("ul").append("<li>" + value + "</li>");
 				});
@@ -38,7 +39,11 @@
 			
 			$("#list").on("click", "li", function(){
 				$(this).toggleClass('purchased');
+<<<<<<< HEAD
 			});
+=======
+			});	
+>>>>>>> 6c9dad43c762c22054834dc4ed30e234b5d94410
 		</script>
 	</body>
 </html>
