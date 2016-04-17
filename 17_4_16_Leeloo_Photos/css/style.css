@@ -1,0 +1,47 @@
+.wrapper{
+	width: 600px;
+	margin: 30px auto;
+}
+
+h1{
+	text-align: center;
+	font-family: Arial;
+	color: #666;
+	text-shadow: 1px 1px 1px black;
+
+}
+
+#slider{
+	width: 600px;
+	height: 600px;
+	overflow: hidden;
+	margin: 60px auto;
+	border-radius: 40px;
+}
+
+#slider > img {
+	width: 600px;
+	height: 600px;
+	float: left;
+	display: none;
+
+}
+
+a{
+	padding: 5px 10px;
+	background-color: #f0f0f0;
+	margin-top: 30px;
+	text-decoration: none;
+	color: #666;
+	font-family: Arial;
+	border-radius: 10px;
+	font-weight: bold;
+
+}
+
+a.left{
+	float:left;
+}
+a.right{
+	float: right;
+}

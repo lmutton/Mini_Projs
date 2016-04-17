@@ -2,7 +2,10 @@
 <html>
 	<head>
 		<title>ShoppingList</title>
+		<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="jsjq.js"></script>
 		<link rel="stylesheet" href="style.css">
+	
 	</head>
 
 	<body>
@@ -26,19 +29,7 @@
 		<div id="footer">2016 lmutton</div>
 	</center>
 		
-		<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
-		<script>
-			$("#addOne").click(function() {
-				var value = $("#name").val();
-				$("ul").append("<li>" + value + "</li>");
-				});
-			$("#clear").click(function(){
-				$("ul").empty();
-			});
-			
-			$("#list").on("click", "li", function(){
-				$(this).toggleClass('purchased');
-			});
-		</script>
+		
+		
 	</body>
 </html>
