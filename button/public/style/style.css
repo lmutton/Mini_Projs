@@ -1,0 +1,28 @@
+
+.container{
+  background-color: #445650;
+  border: 1px #414f4a solid;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10%;
+  color: #1ee49f;
+  width: 300px;
+  height: 300px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: #1ee49f;
+  color: #445650;
+  margin-top: 50px;
+}
+
+.title{
+  margin-top: 30px;
+}
+
+.number{
+  margin-top: 50px;
+}

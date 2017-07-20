@@ -28,10 +28,10 @@ var App = React.createClass({
   render: function (){
     return (
       <div>
-        <h3> Counter </h3>
+        <h2 className="title"> Push a Button </h2>
         <PlusButton onUserClickPlus={this.onUserClickPlus} />
         <MinusButton onUserClickMinus={this.onUserClickMinus} />
-        <h3>{this.state.counter}</h3>
+        <h1 className="number">{this.state.counter}</h1>
       </div>
     );
   }
