@@ -1,22 +1,42 @@
-.App {
-  text-align: center;
+.body {
+    font-family: Helvetica, Arial, Sans-Serif, sans-serif;
+    background: white;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.title {
+    display: flex;
+    padding: 2px;
 }
 
-.App-header {
-  height: 100px;
-  padding: 20px;
-
+.image-gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.App-intro {
-  font-size: large;
+.gallery-image {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.main-image{
-  width: 500px;
+.gallery-image img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.image-list {
+    display: flex;
+    justify-content: space-around;
+    overflow: auto;
+    overflow-y: hidden;
+    margin-top: 50px;
+}
+
+.image-list img {
+    width: 100px;
+    height: 100px;
+
 }
