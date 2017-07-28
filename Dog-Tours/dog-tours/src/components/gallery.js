@@ -1,6 +1,7 @@
 //show main image with a description
 import React, { Component } from 'react';
 
+
 const dogImages = [
   require("../images/arelake.jpg"),
   require("../images/bylake2.jpg"),
@@ -43,11 +44,13 @@ class Gallery extends Component {
      </div>
    </div>
    <div className="image-list">
+
    {images.map((image, index) => (
      <div key={index} onClick={this.handleThumbClick.bind(this, image)}>
        <img src={image} />
      </div>
    ))}
+
    </div>
  </div>
 
