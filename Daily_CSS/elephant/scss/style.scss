@@ -1,0 +1,280 @@
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin pos($margin-left, $margin-top) {
+	margin-left: $margin-left;
+	margin-top: $margin-top;
+}
+
+@mixin rotate($rotate-ms, $rotate-web, $rotate) {
+	-ms-transform: rotate($rotate-ms);
+	-webkit-transform: rotate($rotate-web);
+	transform: rotate($rotate);
+}
+
+$grey: #FFa0a2;
+$outline: #908;
+body {
+	background-color: $outline;
+}
+
+.title {
+	text-align: center;
+	color: $grey;
+	font-family: 'Gloria Hallelujah', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.box {
+	position: relative;
+	@include size(300px, 300px);
+	margin: auto;
+	.body-shape {
+		position: absolute;
+		@include size(105%, 105%);
+		@include pos(0%, 20%);
+		border-radius: 50%;
+		border: 7px solid $grey;
+		background-color: $grey;
+	}
+	.head {
+		position: absolute;
+		@include size(80%, 80%);
+		@include pos(15%, 30%);
+		@include rotate(-15deg, -15deg, -15deg);
+		background-color: $outline;
+		border-radius: 40%;
+		.head-copy {
+			position: absolute;
+			@include size(100%, 100%);
+			background-color: $grey;
+			border-radius: 40%;
+			z-index: 2;
+			border: 5px solid $outline;
+		}
+		.hair-1 {
+			position: absolute;
+			@include size(22%, 5%);
+			@include pos(44%, 3%);
+			@include rotate(-70deg, -70deg, -70deg);
+			border-top: 5px solid $outline;
+			z-index: 1;
+			border-radius: 50%;
+		}
+		.hair-2 {
+			position: absolute;
+			@include size(22%, 5%);
+			@include pos(40.5%, 1%);
+			@include rotate(80deg, 80deg, 80deg);
+			border-top: 5px solid $outline;
+			z-index: 1;
+			border-radius: 40%;
+		}
+		.hair-3 {
+			position: absolute;
+			@include size(22%, 5%);
+			@include pos(42%, 2%);
+			@include rotate(48deg, 48deg, 48deg);
+			border-top: 5px solid $outline;
+			z-index: 1;
+			border-radius: 50%;
+		}
+		.trunk-1 {
+			position: absolute;
+			@include size(60%, 30%);
+			@include pos(40%, 80%);
+			@include rotate(35deg, 35deg, 35deg);
+			background-color: $grey;
+			border-radius: 50%;
+			border-bottom: 6px solid $outline;
+			z-index: 3;
+		}
+		.trunk-2 {
+			position: absolute;
+			@include size(42%, 30%);
+			@include pos(72%, 84%);
+			@include rotate(-20deg, -20deg, -20deg);
+			background-color: $grey;
+			border-radius: 50%;
+			border-bottom: 7px solid $grey;
+			z-index: 3;
+		}
+		.trunk-3 {
+			position: absolute;
+			@include size(26%, 29%);
+			@include pos(87.5%, 81%);
+			@include rotate(-150deg, -150deg, -150deg);
+			background-color: $grey;
+			border-radius: 50%;
+			border-bottom: 7px solid $outline;
+			z-index: 3;
+		}
+		.trunk-4 {
+			position: absolute;
+			@include size(20%, 17%);
+			@include pos(89.5%, 82.3%);
+			@include rotate(110deg, 110deg, 110deg);
+			border-radius: 50%;
+			border-bottom: 7px solid $outline;
+			z-index: 3;
+		}
+		.trunk-5 {
+			position: absolute;
+			@include size(17%, 17%);
+			@include pos(90.5%, 83%);
+			@include rotate(60deg, 60deg, 60deg);
+			border-radius: 50%;
+			border-bottom: 6px solid $outline;
+			z-index: 3;
+		}
+		.trunk-6 {
+			position: absolute;
+			@include size(12%, 10%);
+			@include pos(92%, 89.8%);
+			@include rotate(8deg, 8deg, 8deg);
+			border-radius: 50%;
+			border-bottom: 6px solid $outline;
+			z-index: 5;
+		}
+		.trunk-7 {
+			position: absolute;
+			@include size(10%, 12%);
+			@include pos(93%, 89%);
+			@include rotate(-60deg, -60deg, -60deg);
+			border-radius: 50%;
+			border-bottom: 6px solid $outline;
+			z-index: 3;
+		}
+		.nose-line-1 {
+			position: absolute;
+			@include size(22%, 5%);
+			@include pos(50%, 71.5%);
+			@include rotate(-5deg, -5deg, -5deg);
+			border-top: 4px solid $outline;
+			z-index: 3;
+			border-radius: 50%;
+		}
+		.nose-line-2 {
+			position: absolute;
+			@include size(12%, 5%);
+			@include pos(56%, 76%);
+			@include rotate(-5deg, -5deg, -5deg);
+			border-top: 4px solid $outline;
+			z-index: 3;
+			border-radius: 30%;
+		}
+		.nose-line-3 {
+			position: absolute;
+			@include size(10%, 5%);
+			@include pos(81%, 85.5%);
+			@include rotate(50deg, 50deg, 50deg);
+			border-top: 4px solid $outline;
+			z-index: 3;
+			border-radius: 30%;
+		}
+		.left-eye {
+			position: absolute;
+			@include size(6%, 6%);
+			@include pos(25%, 70%);
+			background-color: $outline;
+			border-radius: 50%;
+			z-index: 3;
+		}
+		.right-eye {
+			position: absolute;
+			@include size(6%, 6%);
+			@include pos(85%, 67%);
+			background-color: $outline;
+			border-radius: 50%;
+			z-index: 3;
+		}
+		.pupil {
+			position: absolute;
+			@include pos(18%, 20%);
+			@include size(30%, 30%);
+			background-color: $grey;
+			border-radius: 50%;
+			z-index: 4;
+		}
+		.left-ear {
+			position: absolute;
+			@include size(50%, 65%);
+			@include pos(-34%, 20%);
+			background-color: $grey;
+			border-radius: 40%;
+			border-bottom-left-radius: 90%;
+			border: 5px solid $outline;
+			z-index: 1;
+			.inner-ear-l {
+				position: absolute;
+				@include size(55%, 66%);
+				@include pos(20%, 23%);
+				border-top: 5px solid $outline;
+				border-radius: 15%;
+				border-bottom-left-radius: 100%;
+			}
+		}
+		.right-ear {
+			position: absolute;
+			@include size(50%, 65%);
+			@include pos(73%, 20%);
+			background-color: $grey;
+			border-radius: 40%;
+			border-bottom-right-radius: 90%;
+			border: 5px solid $outline;
+			.inner-ear-r {
+				position: absolute;
+				@include size(50%, 65%);
+				@include pos(28%, 25%);
+				border-top: 5px solid $outline;
+				border-radius: 15%;
+				border-bottom-right-radius: 100%;
+			}
+		}
+	} //head
+	.f-left-leg {
+		position: absolute;
+		@include size(25%, 25%);
+		@include pos(12%, 108%);
+		background-color: $grey;
+		border-radius: 10%;
+		border: 5px solid $outline;
+		.armpit-l {
+			position: absolute;
+			@include size(0%, 25%);
+			@include pos(100%, 50%);
+			border-radius: 10%;
+			z-index: 2;
+			border: 2px solid $outline;
+		}
+	}
+	.f-right-leg {
+		position: absolute;
+		@include size(25%, 25%);
+		@include pos(68%, 108%);
+		background-color: $grey;
+		border-radius: 10%;
+		border: 5px solid $outline;
+		.armpit-r {
+			position: absolute;
+			@include size(0, 25%);
+			@include pos(-5%, 50%);
+			border-radius: 10%;
+			z-index: 2;
+			border: 2px solid $outline;
+		}
+	}
+} //box
+@media all and (max-width: 600px) {
+	.box {
+		position: relative;
+		margin: auto;
+		display: block;
+		margin-top: 2%;
+		width: 300px;
+		height: 300px;
+		background: none;
+	}
+}
