@@ -1,0 +1,161 @@
+html, body {
+  background: linear-gradient(to top right, #4EC5D7, #4ABAB2);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.title {
+  text-align: center;
+  color: #504F52;
+  font-family: 'Gloria Hallelujah', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding-top: 5%;
+}
+
+.container {
+  position: relative;
+  padding-top: 5%;
+  width: 400px;
+  height: 400px;
+}
+.container #screen-copy {
+  position: absolute;
+  border: 2px solid #504F52;
+  border-radius: 5px;
+  width: 81.5%;
+  height: 50%;
+  margin-left: 6.2%;
+  margin-top: 9.2%;
+  background-color: #8E8C91;
+}
+.container #screen {
+  position: absolute;
+  border: 13px solid #504F52;
+  border-radius: 5px;
+  width: 80%;
+  height: 50%;
+  margin-left: 7%;
+  margin-top: 10%;
+  background-color: #EDEDED;
+}
+.container #screen #camera {
+  position: absolute;
+  z-index: 2;
+  width: 3%;
+  height: 5.5%;
+  margin-left: 48%;
+  margin-top: -3.8%;
+  border: 2px solid #69676B;
+  border-radius: 50%;
+  background-color: #414042;
+}
+.container #screen #square-one {
+  position: absolute;
+  z-index: 2;
+  width: 25%;
+  height: 25%;
+  margin-left: 5%;
+  margin-top: 38%;
+  background-color: #D6D6D6;
+}
+.container #screen #square-two {
+  position: absolute;
+  z-index: 2;
+  width: 35%;
+  height: 25%;
+  margin-left: 32.5%;
+  margin-top: 38%;
+  background-color: #D6D6D6;
+}
+.container #screen #square-three {
+  position: absolute;
+  z-index: 2;
+  width: 25%;
+  height: 25%;
+  margin-left: 70%;
+  margin-top: 38%;
+  background-color: #D6D6D6;
+}
+.container #screen #square-four {
+  position: absolute;
+  z-index: 2;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  margin-top: 12%;
+  background-color: #D6D6D6;
+}
+.container #screen #square-five {
+  position: absolute;
+  z-index: 2;
+  width: 90%;
+  height: 10%;
+  margin-left: 5%;
+  margin-top: 4%;
+  background-color: #D6D6D6;
+}
+.container #screen #square-five #red-dot {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 3;
+  width: 3%;
+  height: 45%;
+  margin-left: 2%;
+  margin-top: 2%;
+  background-color: #DB6E6D;
+}
+.container #screen #square-five #yellow-dot {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 3;
+  width: 3%;
+  height: 45%;
+  margin-left: 5.9%;
+  margin-top: 2%;
+  background-color: #E5E581;
+}
+.container #screen #square-five #green-dot {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 3;
+  width: 3%;
+  height: 45%;
+  margin-left: 10%;
+  margin-top: 2%;
+  background-color: #6EB885;
+}
+
+#keyboard-one {
+  position: absolute;
+  border: 2px solid #504F52;
+  border-radius: 0px 0px 50px 50px;
+  width: 90%;
+  height: 4%;
+  margin-left: 1.5%;
+  margin-top: 56%;
+  background: linear-gradient(#8E8C91 70%, #737175 0%);
+  z-index: 2;
+}
+#keyboard-one #lip {
+  position: absolute;
+  border: 1px solid #504F52;
+  border-radius: 5px 5px 30px 30px;
+  width: 10%;
+  height: 44%;
+  margin-left: 45.8%;
+  margin-top: -0.5%;
+  background-color: #69676B;
+  z-index: 4;
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 2%;
+    width: 300px;
+    height: 300px;
+    background: none;
+  }
+}
