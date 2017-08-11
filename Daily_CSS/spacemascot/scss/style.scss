@@ -1,0 +1,376 @@
+@mixin w-h($width, $height) {
+	width: $width;
+	height: $height;
+}
+@mixin l-t($margin-left, $margin-top) {
+	margin-left: $margin-left;
+	margin-top: $margin-top;
+}
+
+$body-color: #64BF6D;
+$eye-color: #2E2E2E;
+
+html, .body{
+	background-color: $eye-color;
+}
+
+.title {
+	text-align: center;
+	color: $body-color;
+	font-family: 'Press Start 2P', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+h2{
+	@include l-t(40px, 400px);	
+	position: absolute;
+	border: 5px dashed $body-color;
+	padding: 20px;
+}
+
+h2.blinking{
+	color: #B55EA8;
+		border-color: #B55EA8;
+}
+
+.container {
+	position: relative;
+	@include w-h(400px, 400px);
+	margin: auto;
+
+	.body-one {
+		position: absolute;
+		@include w-h(80px, 55px);
+		@include l-t(20px, 150px);
+		background-color: $body-color;
+
+		.l-ear-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(15px, -10px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-ear-two {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(5px, -20px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+		.r-ear-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(55px, -10px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.r-ear-two {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(65px, -20px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-eye {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(15px, 15px);
+			background-color: $eye-color;
+			z-index: 2;
+		}
+		.r-eye {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(55px, 15px);
+			background-color: $eye-color;
+			z-index: 2;
+		}
+
+		.l-arm-one {
+			position: absolute;
+			@include w-h(10px, 30px);
+			@include l-t(-10px, 12px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-arm-two {
+			position: absolute;
+			@include w-h(10px, 38px);
+			@include l-t(-20px, 25px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.r-arm-two {
+			position: absolute;
+			@include w-h(10px, 38px);
+			@include l-t(90px, 25px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.r-arm-one {
+			position: absolute;
+			@include w-h(10px, 30px);
+			@include l-t(80px, 12px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-leg-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(15px, 55px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-leg-two {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(5px, 65px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+		.r-leg-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(55px, 55px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.r-leg-two {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(65px, 65px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+	}
+
+	.body-two {
+		position: absolute;
+		@include w-h(80px, 55px);
+		@include l-t(162px, 150px);
+		background-color: $body-color;
+		
+		.l-ear-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(15px, -10px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		
+		.r-ear-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(55px, -10px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		
+
+		.l-eye {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(15px, 30px);
+			background-color: $eye-color;
+			z-index: 2;
+		}
+		.r-eye {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(55px, 30px);
+			background-color: $eye-color;
+			z-index: 2;
+		}
+
+		.l-arm-one {
+			position: absolute;
+			@include w-h(10px, 30px);
+			@include l-t(-10px, 12px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-arm-two {
+			position: absolute;
+			@include w-h(10px, 38px);
+			@include l-t(-20px, 25px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.r-arm-two {
+			position: absolute;
+			@include w-h(10px, 38px);
+			@include l-t(90px, 25px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.r-arm-one {
+			position: absolute;
+			@include w-h(10px, 30px);
+			@include l-t(80px, 12px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-leg-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(15px, 55px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-leg-two {
+			position: absolute;
+			@include w-h(20px, 10px);
+			@include l-t(5px, 65px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+		.r-leg-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(55px, 55px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.r-leg-two {
+			position: absolute;
+			@include w-h(20px, 10px);
+			@include l-t(55px, 65px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+	}
+	.body-three {
+		position: absolute;
+		@include w-h(80px, 55px);
+		@include l-t(300px, 150px);
+		background-color: $body-color;
+		.l-ear-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(15px, -10px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-ear-two {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(5px, -20px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+		.r-ear-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(55px, -10px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.r-ear-two {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(65px, -20px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-eye {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(15px, 15px);
+			background-color: $eye-color;
+			z-index: 2;
+		}
+		.r-eye {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(55px, 15px);
+			background-color: $eye-color;
+			z-index: 2;
+		}
+
+		.l-arm-one {
+			position: absolute;
+			@include w-h(10px, 30px);
+			@include l-t(-10px, 12px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-arm-two {
+			position: absolute;
+			@include w-h(10px, 38px);
+			@include l-t(-20px, -10px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.r-arm-two {
+			position: absolute;
+			@include w-h(10px, 38px);
+			@include l-t(90px, -10px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.r-arm-one {
+			position: absolute;
+			@include w-h(10px, 30px);
+			@include l-t(80px, 12px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-leg-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(15px, 55px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.l-leg-two {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(5px, 65px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+		.r-leg-one {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(55px, 55px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+
+		.r-leg-two {
+			position: absolute;
+			@include w-h(10px, 10px);
+			@include l-t(65px, 65px);
+			background-color: $body-color;
+			z-index: 2;
+		}
+	}
+	
+	
+}
