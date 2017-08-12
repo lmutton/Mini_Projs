@@ -1,0 +1,212 @@
+.title {
+  text-align: center;
+  color: #EBB9BA;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  margin-top: 5%;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  margin-top: 5%;
+}
+.container .phone-copy {
+  position: absolute;
+  width: 36.5%;
+  height: 71.7%;
+  margin-left: 39.2%;
+  margin-top: 4.14%;
+  background-color: #EBB9BA;
+  border-radius: 8%;
+  border: 1px solid #B89194;
+  border-left-color: #9E7D7F;
+  z-index: 1;
+}
+.container .phone-front {
+  position: absolute;
+  width: 35%;
+  height: 70%;
+  margin-left: 40%;
+  margin-top: 5%;
+  border: 1px solid #B89194;
+  background: linear-gradient(to top left, #EDEDED, #FCFCFC);
+  border-radius: 8%;
+  z-index: 2;
+}
+.container .phone-front .screen {
+  position: absolute;
+  width: 90.9%;
+  height: 78%;
+  margin-left: 4.9%;
+  margin-top: 21%;
+  /*background: linear-gradient(to top left, #69A9C2, #69A9C2);*/
+  background-image: url("http://res.cloudinary.com/drwqdcmyx/image/upload/v1502553315/20806953_1062731977194844_2146564184_o_stnr5h.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 1%;
+  z-index: 3;
+  border: 1px solid #787A7A;
+}
+.container .phone-front .screen .app-dock {
+  position: absolute;
+  width: 100%;
+  height: 17%;
+  margin-left: 0%;
+  margin-top: 142%;
+  background-color: #756E65;
+  opacity: 0.7;
+  border-radius: 1%;
+  border-top: 1px solid #66604E;
+  z-index: 4;
+}
+.container .phone-front .screen .app-one {
+  position: absolute;
+  width: 20%;
+  height: 12%;
+  margin-left: 2.4%;
+  margin-top: 147.5%;
+  background-color: #399C66;
+  border-radius: 20%;
+  z-index: 5;
+}
+.container .phone-front .screen .app-one .i {
+  color: #fff;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 18%;
+}
+.container .phone-front .screen .app-two {
+  position: absolute;
+  width: 20%;
+  height: 12%;
+  margin-left: 27.6%;
+  margin-top: 147.5%;
+  background-color: #fff;
+  border-radius: 20%;
+  z-index: 5;
+}
+.container .phone-front .screen .app-two .i {
+  color: #4E7BBF;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 18%;
+}
+.container .phone-front .screen .app-three {
+  position: absolute;
+  width: 20%;
+  height: 12%;
+  margin-left: 52.7%;
+  margin-top: 147.5%;
+  background-color: #399C66;
+  border-radius: 20%;
+  z-index: 5;
+}
+.container .phone-front .screen .app-three .i {
+  color: #fff;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 15%;
+}
+.container .phone-front .screen .app-four {
+  position: absolute;
+  width: 20%;
+  height: 12%;
+  margin-left: 77.3%;
+  margin-top: 147.5%;
+  background-color: #3B3938;
+  border-radius: 20%;
+  z-index: 5;
+}
+.container .phone-front .screen .app-four .i {
+  color: #399C66;
+  position: absolute;
+  margin-left: 22%;
+  margin-top: 15%;
+}
+.container .phone-front .screen-button {
+  position: absolute;
+  width: 16%;
+  height: 8%;
+  margin-left: 41.5%;
+  margin-top: 180%;
+  border: 2px solid #875C60;
+  border-radius: 50%;
+  z-index: 4;
+}
+.container .phone-front .button-glare {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-left: -7.5%;
+  margin-top: 0%;
+  border-left: 2px solid #EBB9BA;
+  border-right: 2px solid #EBB9BA;
+  border-radius: 50%;
+  z-index: 5;
+  -ms-transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+  overflow: hidden;
+}
+.container .phone-front .speaker {
+  position: absolute;
+  width: 25%;
+  height: 1%;
+  margin-left: 38%;
+  margin-top: 10%;
+  border-radius: 30%;
+  z-index: 4;
+  background-color: #3B3B3B;
+}
+.container .phone-front .f-camera {
+  position: absolute;
+  width: 6.5%;
+  height: 3%;
+  margin-left: 25%;
+  margin-top: 8%;
+  border-radius: 50%;
+  z-index: 4;
+  background: linear-gradient(to top left, #242424, #525252);
+}
+.container .phone-back {
+  position: absolute;
+  width: 36.5%;
+  height: 71.7%;
+  margin-left: 28%;
+  margin-top: 4.14%;
+  background-color: #EBB9BA;
+  border-radius: 8%;
+  border: 1px solid #B89194;
+}
+.container .phone-back .b-camera {
+  position: absolute;
+  width: 12%;
+  height: 6%;
+  margin-left: 10%;
+  margin-top: 7.5%;
+  border-radius: 50%;
+  border: 2px solid #B89194;
+  background: linear-gradient(to top left, #242424, #525252);
+}
+.container .phone-back .top-line {
+  position: absolute;
+  width: 90%;
+  height: 95%;
+  margin-left: 2.5%;
+  margin-top: 3%;
+  border-radius: 8%;
+  border: 3px solid #FCFCFC;
+}
+.container .phone-back .bottom-line {
+  position: absolute;
+  width: 4.7%;
+  height: 74%;
+  margin-left: 0%;
+  margin-top: 25%;
+  border-top: 3px solid #FCFCFC;
+  border-bottom: 3px solid #FCFCFC;
+  background-color: #EBB9BA;
+}

@@ -1,0 +1,201 @@
+@mixin w-h($width, $height) {
+	width: $width;
+	height: $height;
+}
+@mixin l-t($margin-left, $margin-top) {
+	margin-left: $margin-left;
+	margin-top: $margin-top;
+}
+
+$rose-gold: #EBB9BA;
+$dark-gold: #B89194;
+$black: #3B3B3B;
+
+
+
+.title {
+	text-align: center;
+	color: $rose-gold;
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+	margin-top: 5%;
+}
+
+.container {
+	position: relative;
+	@include w-h(400px, 400px);
+	margin: auto;
+	margin-top: 5%;
+
+	.phone-copy {
+		position: absolute;
+		@include w-h(36.5%, 71.7%);
+		@include l-t(39.2%, 4.14%);
+		background-color: $rose-gold;
+		border-radius: 8%;
+		border: 1px solid $dark-gold;
+		border-left-color: #9E7D7F;
+		z-index: 1;
+	}
+
+	.phone-front {
+		position: absolute;
+		@include w-h(35%, 70%);
+		@include l-t(40%, 5%);
+		border: 1px solid $dark-gold;
+		background: linear-gradient(to top left, #EDEDED, #FCFCFC);
+		border-radius: 8%;
+		z-index: 2;
+		.screen {
+			position: absolute;
+			@include w-h(90.9%, 78%);
+			@include l-t(4.9%, 21%);
+			/*background: linear-gradient(to top left, #69A9C2, #69A9C2);*/
+			background-image: url("http://res.cloudinary.com/drwqdcmyx/image/upload/v1502553315/20806953_1062731977194844_2146564184_o_stnr5h.jpg");
+			background-size: cover;
+			background-position: center;
+			border-radius: 1%;
+			z-index: 3;
+			border: 1px solid #787A7A;
+			.app-dock{
+				position: absolute;
+			@include w-h(100%, 17%);
+			@include l-t(0%, 142%);
+			background-color: #756E65;
+			opacity: 0.7;
+			border-radius: 1%;
+			border-top: 1px solid #66604E;
+			z-index: 4;
+			}
+				.app-one{
+					position: absolute;
+			@include w-h(20%, 12%);
+			@include l-t(2.4%, 147.5%);
+			background-color: #399C66;
+			border-radius: 20%;
+			z-index: 5;
+					.i {
+						color: #fff;
+						position: absolute;
+						@include l-t(25%, 18%);
+					}
+			
+				}
+				.app-two{
+					position: absolute;
+			@include w-h(20%, 12%);
+			@include l-t(27.6%, 147.5%);
+			background-color: #fff;
+			border-radius: 20%;
+			z-index: 5;
+					.i {
+						color: #4E7BBF;
+						position: absolute;
+						@include l-t(20%, 18%);
+					}
+				}
+				.app-three{
+					position: absolute;
+			@include w-h(20%, 12%);
+			@include l-t(52.7%, 147.5%);
+			background-color: #399C66;
+			border-radius: 20%;
+			z-index: 5;
+					.i {
+						color: #fff;
+						position: absolute;
+						@include l-t(20%, 15%);
+					}
+				}
+				.app-four{
+					position: absolute;
+			@include w-h(20%, 12%);
+			@include l-t(77.3%, 147.5%);
+			background-color: #3B3938;
+			border-radius: 20%;
+			z-index: 5;
+					.i {
+						color: #399C66;
+						position: absolute;
+						@include l-t(22%, 15%);
+					}
+				}
+			
+				
+		}
+		.screen-button {
+			position: absolute;
+			@include w-h(16%, 8%);
+			@include l-t(41.5%, 180%);
+			border: 2px solid #875C60;
+			border-radius: 50%;
+			z-index: 4;
+		}
+		.button-glare {
+			position: absolute;
+			@include w-h(100%, 100%);
+			@include l-t(-7.5%, 0%);
+			border-left: 2px solid $rose-gold;
+			border-right: 2px solid $rose-gold;
+			border-radius: 50%;
+			z-index: 5;
+			-ms-transform: rotate(-35deg);
+			-webkit-transform: rotate(-35deg);
+			transform: rotate(-35deg);
+			overflow: hidden;
+		}
+
+		.speaker {
+			position: absolute;
+			@include w-h(25%, 1%);
+			@include l-t(38%, 10%);
+			border-radius: 30%;
+			z-index: 4;
+			background-color: $black;
+		}
+		.f-camera {
+			position: absolute;
+			@include w-h(6.5%, 3%);
+			@include l-t(25%, 8%);
+			border-radius: 50%;
+			z-index: 4;
+			background: linear-gradient(to top left, #242424, #525252);
+		}
+	}
+
+	.phone-back {
+		position: absolute;
+		@include w-h(36.5%, 71.7%);
+		@include l-t(28%, 4.14%);
+		background-color: $rose-gold;
+		border-radius: 8%;
+		border: 1px solid $dark-gold;
+
+		.b-camera {
+			position: absolute;
+			@include w-h(12%, 6%);
+			@include l-t(10%, 7.5%);
+			border-radius: 50%;
+			border: 2px solid $dark-gold;
+			background: linear-gradient(to top left, #242424, #525252);
+		}
+
+		.top-line {
+			position: absolute;
+			@include w-h(90%, 95%);
+			@include l-t(2.5%, 3%);
+			border-radius: 8%;
+			border: 3px solid #FCFCFC;
+		}
+
+		.bottom-line {
+			position: absolute;
+			@include w-h(4.7%, 74%);
+			@include l-t(0%, 25%);
+
+			border-top: 3px solid #FCFCFC;
+			border-bottom: 3px solid #FCFCFC;
+			background-color: $rose-gold;
+		}
+	}
+}
