@@ -1,0 +1,43 @@
+body {
+  background-color: #35637F;
+}
+
+.container {
+  text-align: center;
+  height: 300px;
+  font-family: 'Rock Salt', cursive;
+  color: #FFF7F1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.wrapper .gallery-item {
+  display: inline-block;
+  background-color: #FFF7F1;
+  margin: 10px;
+  box-shadow: 2px 2px 2px #224052;
+}
+.wrapper .gallery-item img {
+  max-width: 90%;
+  height: auto;
+  border: 1px solid #F5EFE4;
+  border-radius: 3px;
+  margin-top: 5%;
+}
+.wrapper .gallery-item .img-title {
+  font-size: 1em;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  color: #3A3A3B;
+}
+
+@media only screen and (min-width: 480px), (max-width: 768px) {
+  .wrapper {
+    text-align: center;
+  }
+}
