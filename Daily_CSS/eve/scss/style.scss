@@ -1,0 +1,405 @@
+@mixin w-h($width, $height) {
+	width: $width;
+	height: $height;
+}
+@mixin l-t($margin-left, $margin-top) {
+	margin-left: $margin-left;
+	margin-top: $margin-top;
+}
+
+$blue: #97BFFF;
+$black: #272729;
+$shade-grey: #D2CBD4;
+$outline-grey: #9A989E;
+
+@-moz-keyframes hover {
+  0% {
+    top: 100px;
+  }
+
+  50% {
+    top: 90px;
+  }
+
+  100% {
+    top: 100px;
+  }
+}
+@-webkit-keyframes hover {
+  0% {
+    top: 100px;
+  }
+
+  50% {
+    top: 90px;
+  }
+
+  100% {
+    top: 100px;
+  }
+}
+@-o-keyframes hover {
+  0% {
+    top: 100px;
+  }
+
+  50% {
+    top: 90px;
+  }
+
+  100% {
+    top: 100px;
+  }
+}
+@-ms-keyframes hover {
+  0% {
+    top: 100px;
+  }
+
+  50% {
+    top: 90px;
+  }
+
+  100% {
+    top: 100px;
+  }
+}
+@keyframes hover {
+  0% {
+    top: 100px;
+  }
+
+  50% {
+    top: 90px;
+  }
+
+  100% {
+    top: 100px;
+  }
+}
+
+@-moz-keyframes shade {
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  50% {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  100% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+@-webkit-keyframes shade {
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  50% {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  100% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+@-o-keyframes shade {
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  50% {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  100% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+@-ms-keyframes shade {
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  50% {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  100% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+@keyframes shade {
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  50% {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  100% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+body{
+	background-color: #4AB3E5;
+}
+
+.title {
+	text-align: center;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+	margin-top: 5%;
+	
+}
+
+span{
+	font-family: 'Audiowide', sans-serif;
+}
+
+.container {
+	position: relative;
+	margin: auto;	
+	@include w-h(400px, 600px);
+
+	.eve {
+		position: relative;
+		margin: 0 auto;		
+		@include w-h(300px, 300px);
+		-webkit-animation-name: hover;
+  	-moz-animation-name: hover;
+  	animation-name: hover;
+  	-webkit-animation-duration: 1s;
+  	-moz-animation-duration: 1s;
+  	animation-duration: 1s;
+  	-webkit-animation-iteration-count: infinite;
+  	-moz-animation-iteration-count: infinite;
+  	animation-iteration-count: infinite;
+
+		.head {
+			background-color: #fff;
+			position: absolute;
+			border: 1px solid $outline-grey;
+			@include w-h(38%, 29%);
+			@include l-t(30%, 1%);
+			border-bottom: 2px solid $outline-grey;
+			-webkit-border-radius: 50% 50% 50% 50% / 60% 60% 35% 35%;
+			-moz-border-radius: 50% 50% 50% 50% / 60% 60% 35% 35%;
+			border-radius: 50% 50% 50% 50% / 60% 60% 35% 35%;
+			box-shadow: inset -1px 0 1px 1px rgba(255,255,255,0.5), inset -3px -3px 15px 1px rgba(0,0,0,0.3);
+			z-index: 2;
+			.face {
+				position: absolute;
+				background-color: $black;
+				border: 1px solid black;
+				@include w-h(75%, 60%);
+				@include l-t(12%, 20%);
+				-webkit-border-radius: 50% 50% 50% 50% / 60% 60% 35% 35%;
+				-moz-border-radius: 50% 50% 50% 50% / 60% 60% 35% 35%;
+				border-radius: 50% 50% 50% 50% / 60% 60% 35% 35%;
+				z-index: 3;
+				.l-eye {
+					position: absolute;
+					background-color: #5071E5;
+  				background: -webkit-repeating-linear-gradient(#5071E5, #5071E5 10%, #AFDBFF 20%);  
+  				background: -o-repeating-linear-gradient(#5071E5, #5071E5 10%, #AFDBFF 20%);  
+  				background: -moz-repeating-linear-gradient(#5071E5, #5071E5 10%, #AFDBFF 20%);  
+  				background: repeating-linear-gradient(#5071E5, #5071E5 10%, #AFDBFF 20%);
+					@include w-h(25%, 32%);
+					@include l-t(16%, 25%);
+					border-radius: 50%;
+					z-index: 3;
+					.pupil {
+						position: absolute;
+						background-color: $black;
+						@include w-h(100%, 90%);
+						@include l-t(0%, 23%);
+						border-radius: 50%;
+						z-index: 3;
+						animation: blink-animation 2s steps(5, start) infinite;
+  					-webkit-animation: blink-animation 2s steps(5, start) infinite;
+					}
+				}
+				.r-eye {
+					position: absolute;
+					background-color: #5071E5;
+  				background: -webkit-repeating-linear-gradient(#5071E5, #5071E5 10%, #AFDBFF 20%);  
+  				background: -o-repeating-linear-gradient(#5071E5, #5071E5 10%, #AFDBFF 20%);  
+  				background: -moz-repeating-linear-gradient(#5071E5, #5071E5 10%, #AFDBFF 20%);  
+  				background: repeating-linear-gradient(#5071E5, #5071E5 10%, #AFDBFF 20%);
+					@include w-h(25%, 32%);
+					@include l-t(58%, 25%);
+					border-radius: 50%;
+					z-index: 3;
+					.pupil {
+						position: absolute;
+						background-color: $black;
+						@include w-h(100%, 90%);
+						@include l-t(0%, 23%);
+						border-radius: 50%;
+						z-index: 3;
+						animation: blink-animation 2s steps(5, start) infinite;
+  					-webkit-animation: blink-animation 2s steps(5, start) infinite;
+					}
+				}
+			}
+		}
+
+		.body {
+			position: absolute;
+			border: 1px solid $outline-grey;
+			background-color: #fff;
+			@include w-h(38%, 60%);
+			@include l-t(30%, 22.7%);
+			border-bottom: 2px solid $outline-grey;
+			-webkit-border-radius: 50% 50% 50% 50% / 20% 20% 70% 70%;
+			-moz-border-radius: 50% 50% 50% 50% / 20% 20% 70% 70%;
+			border-radius: 50% 50% 50% 50% / 12% 12% 80% 80%;
+			box-shadow: inset -1px 0 1px 1px rgba(255,255,255,0.5), inset -3px -3px 15px 1px rgba(0,0,0,0.3);
+			.b-dot-1{
+				background-color: $blue;
+				position: absolute;
+				@include w-h(5.5%, 3%);
+				@include l-t(15%, 45%);
+				border-radius: 50%;
+				z-index: 3;
+			}
+			.b-dot-2{
+				background-color: $blue;
+				position: absolute;
+				@include w-h(5.5%, 3%);
+				@include l-t(22%, 45%);
+				border-radius: 50%;
+				z-index: 3;
+			}
+			.b-dot-3{
+				background-color: $blue;
+				position: absolute;
+				@include w-h(5.5%, 3%);
+				@include l-t(29%, 45%);
+				border-radius: 50%;
+				z-index: 3;
+			}
+			.g-dot{
+				background-color: #77E572;
+				position: absolute;
+				@include w-h(8%, 5%);
+				@include l-t(36%, 43.5%);
+				border-radius: 50%;
+				z-index: 3;
+			}
+			.head-shade {
+				position: absolute;
+				background: $shade-grey;
+				background: -webkit-radial-gradient(#585659, #BAB8BD, #E3E0E5);
+				background: -o-radial-gradient(#585659, #BAB8BD, #E3E0E5);
+				background: -moz-radial-gradient(#585659, #BAB8BD, #E3E0E5);
+				background: radial-gradient(#585659 45%, #BAB8BD, #E3E0E5);
+				border-bottom: 2px solid $outline-grey;
+				border-left: 1px solid $outline-grey;
+				border-right: 1px solid $outline-grey;
+				@include w-h(93%, 12%);
+				@include l-t(3%, 7%);
+				-webkit-border-radius: 50% 50% 50% 50% / 90% 90% 40% 40%;
+				-moz-border-radius: 50% 50% 50% 50% / 90% 90% 40% 40%;
+				border-radius: 50% 50% 70% 70% / 100% 100% 75% 75%;
+			}
+			.l-arm {
+				position: absolute;
+				background-color: #fff;
+				border: 1px solid $outline-grey;
+				@include w-h(15%, 70%);
+				@include l-t(-18%, 21%);
+				border-bottom: 2px solid $outline-grey;
+				-webkit-border-radius: 50% 50% 50% 50% / 20% 20% 70% 70%;
+				-moz-border-radius: 50% 50% 50% 50% / 20% 20% 70% 70%;
+				border-radius: 100% 10% 10% 100% / 20% 10% 100% 100%;
+				z-index: 3;
+				-ms-transform: rotate(-2deg); 
+    		-webkit-transform: rotate(-2deg); 
+    		transform: rotate(-2deg);
+				box-shadow: inset 8px -4px 8px 6px rgba(255,255,255,0.9), inset -12px -20px 40px 2px rgba(0,0,0,0.2);
+			
+			}
+			.r-arm {
+				position: absolute;
+				background-color: #fff;
+				border: 1px solid $outline-grey;
+				@include w-h(15%, 70%);
+				@include l-t(102%, 21%);
+				border-bottom: 2px solid $outline-grey;
+				-webkit-border-radius: 50% 50% 50% 50% / 20% 20% 70% 70%;
+				-moz-border-radius: 50% 50% 50% 50% / 20% 20% 70% 70%;
+				border-radius: 10% 100% 100% 10% / 10% 20% 100% 100%;
+				z-index: 3;
+				-ms-transform: rotate(2deg); /* IE 9 */
+    		-webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    		transform: rotate(2deg);
+				box-shadow: inset -8px -4px 8px 6px rgba(255,255,255,0.9), inset -10px -20px 40px 2px rgba(0,0,0,0.2);
+			}
+			
+		}
+	}
+	
+	.shade{
+	position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  @include w-h(30%, 5%);
+	@include l-t(34.8%, 25%);
+  border-radius: 100%;
+  -webkit-animation-name: shade;
+  -moz-animation-name: shade;
+  animation-name: shade;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+	}
+}
