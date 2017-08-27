@@ -1,0 +1,106 @@
+@keyframes color-animation {
+  0% {
+    background: #7AAAE8;
+  }
+  20% {
+    background: #C191E8;
+  }
+  40% {
+    background: #E87292;
+  }
+  60% {
+    background: #DDE8B1;
+  }
+  80% {
+    background: #85E883;
+  }
+  100% {
+    background: #E8DE81;
+  }
+}
+body {
+  background-color: #192636;
+}
+
+.title {
+  text-align: center;
+  color: #FFFFFA;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  margin-top: 5%;
+}
+.title span {
+  font-family: 'Play', sans-serif;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+.container .outer {
+  position: absolute;
+  margin: auto;
+  width: 45%;
+  height: 45%;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: color-animation 3s infinite linear alternate;
+}
+.container .outer .middle {
+  position: absolute;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 10px solid #192636;
+  animation: color-animation 3s infinite linear alternate;
+}
+.container .outer .middle .inner {
+  position: absolute;
+  margin: auto;
+  width: 25%;
+  height: 25%;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #192636;
+}
+.container .dot1 {
+  position: absolute;
+  margin: auto;
+  width: 8%;
+  height: 8%;
+  margin-left: 27%;
+  margin-top: 27%;
+  transform: translate(-27%, -27%);
+  border-radius: 50%;
+  animation: color-animation 3s infinite linear alternate;
+}
+.container .dot2 {
+  position: absolute;
+  margin: auto;
+  width: 8%;
+  height: 10%;
+  margin-left: 46%;
+  margin-top: 18%;
+  border-radius: 50% 50% 0 0;
+  animation: color-animation 3s infinite linear alternate;
+}
+.container .dot3 {
+  position: absolute;
+  margin: auto;
+  width: 10%;
+  height: 8%;
+  margin-left: 18.5%;
+  margin-top: 46%;
+  border-radius: 50% 0 0 50%;
+  animation: color-animation 3s infinite linear alternate;
+}

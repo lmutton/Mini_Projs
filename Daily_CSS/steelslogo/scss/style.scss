@@ -1,0 +1,112 @@
+@mixin w-h($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin l-t($margin-left, $margin-top) {
+	margin-left: $margin-left;
+	margin-top: $margin-top;
+}
+
+$black: #192636;
+
+@keyframes color-animation{
+	0%{
+		background: #7AAAE8;
+	}
+	20%{
+		background: #C191E8;
+	}
+	40%{
+		background: #E87292;
+	}
+	60%{
+		background: #DDE8B1;
+	}
+	80%{
+		background: #85E883;
+	}
+	100%{
+		background: #E8DE81;
+	}
+}
+
+
+
+body{
+	background-color: $black;
+}
+
+.title {
+	text-align: center;
+	color: #FFFFFA;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+	margin-top: 5%;
+	span{
+	font-family: 'Play', sans-serif;
+}
+	
+}
+
+.container {
+	position: relative;
+	margin: auto;
+	@include w-h(200px, 200px);
+
+	.outer {
+		position: absolute;
+		margin: auto;
+		@include w-h(45%, 45%);
+		@include l-t(50%, 50%);
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		animation: color-animation 3s infinite linear alternate;
+		.middle {
+			position: absolute;
+			margin: auto;
+			@include w-h(40%, 40%);
+			@include l-t(50%, 50%);
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			border: 10px solid $black;
+			animation: color-animation 3s infinite linear alternate;
+			.inner {
+				position: absolute;
+				margin: auto;
+				@include w-h(25%, 25%);
+				@include l-t(50%, 50%);
+				transform: translate(-50%, -50%);
+				border-radius: 50%;
+				background: $black;
+			}
+		}
+	}
+	.dot1{
+		position: absolute;
+		margin: auto;
+		@include w-h(8%, 8%);
+		@include l-t(27%, 27%);
+		transform: translate(-27%, -27%);
+		border-radius: 50%;
+		animation: color-animation 3s infinite linear alternate;
+	}
+	.dot2{
+		position: absolute;
+		margin: auto;
+		@include w-h(8%, 10%);
+		@include l-t(46%, 18%);
+		border-radius: 50% 50% 0 0;
+		animation: color-animation 3s infinite linear alternate;
+		
+	}
+	.dot3{
+		position: absolute;
+		margin: auto;
+		@include w-h(10%, 8%);
+		@include l-t(18.5%, 46%);
+		border-radius: 50% 0 0 50%;
+		animation: color-animation 3s infinite linear alternate;
+		
+	}
+}
