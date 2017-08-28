@@ -1,0 +1,78 @@
+/* need to add funcitonality */
+
+@mixin long-shadow($length: 20px, $color: #333, $shadow-type: 'text'){
+  $string: '';
+  @for $i from 1px through $length {
+    $string: $string + $i $i $color;
+    @if $i < $length { 
+      $string: $string + ', '
+    }
+  }
+  #{$shadow-type}-shadow: #{$string};
+}
+
+$primary: #34495e;
+$accent: #425C76;
+$white: #ecf0f1;
+$secondary: #2c3e50;
+$clear: #76425C;
+
+body{
+	background-color: $secondary;
+}
+
+.title{
+	color: $white;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	margin-top: 100px;
+	z-index: 3;
+}
+
+.container{
+	position: relative;
+	margin-top: 100px;
+	width: 220px;
+	height: 320px;
+	background-color: $primary;
+	padding: 0px;
+	@include long-shadow(700px, darken($secondary, 2%), 'box');
+	
+	.display{
+		height: 100px;
+		width: 100%;
+		background-color: $accent;
+		padding-top: 8px;
+		margin-bottom: 6px;
+		text-align: right;
+		#history{			
+			color: $white;
+			margin-right: 10px;
+		}
+		#result{
+			color: $white;
+			font-size: 2em;
+			margin-top: 20px;
+			margin-right: 10px;
+		}
+	}
+	.row{
+		width: 100%;
+		margin: auto 5px;
+		
+		.btn{
+			width: 40px;
+			height: 40px;
+			margin: 6px;
+			background-color: $primary;
+			color: $white;
+			border-radius: 5%;
+		}
+		#equals, #sum{
+			background-color: $accent;
+		}
+		#clear{
+			background-color: $clear;
+		}
+	}
+}
