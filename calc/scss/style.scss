@@ -1,27 +1,28 @@
 /* need to add funcitonality */
 
-@mixin long-shadow($length: 20px, $color: #333, $shadow-type: 'text'){
-  $string: '';
-  @for $i from 1px through $length {
-    $string: $string + $i $i $color;
-    @if $i < $length { 
-      $string: $string + ', '
-    }
-  }
-  #{$shadow-type}-shadow: #{$string};
+@mixin long-shadow($length: 20px, $color: #333, $shadow-type: 'text') {
+	$string: '';
+	@for $i from 1px through $length {
+		$string: $string + $i $i $color;
+		@if $i < $length {
+			$string: $string + ', ';
+		}
+	}
+	#{$shadow-type}-shadow: #{$string};
 }
 
 $primary: #34495e;
 $accent: #425C76;
 $white: #ecf0f1;
 $secondary: #2c3e50;
-$clear: #76425C;
+$clear: #5E3449;
+$equals: #425C76;
 
-body{
+body {
 	background-color: $secondary;
 }
 
-.title{
+.title {
 	color: $white;
 	font-family: 'Roboto Condensed', sans-serif;
 	text-align: center;
@@ -29,50 +30,67 @@ body{
 	z-index: 3;
 }
 
-.container{
+.container {
 	position: relative;
 	margin-top: 100px;
 	width: 220px;
-	height: 320px;
+	height: 372px;
 	background-color: $primary;
 	padding: 0px;
 	@include long-shadow(700px, darken($secondary, 2%), 'box');
-	
-	.display{
+
+	.display {
 		height: 100px;
 		width: 100%;
 		background-color: $accent;
 		padding-top: 8px;
 		margin-bottom: 6px;
 		text-align: right;
-		#history{			
+		overflow: hidden;
+		
+		#history {
 			color: $white;
 			margin-right: 10px;
+			text-align: right;
+			border: none;
+			background-color: $accent;
 		}
-		#result{
+		#result {
 			color: $white;
-			font-size: 2em;
-			margin-top: 20px;
-			margin-right: 10px;
+			height: 70px;
+			margin-left: -100px;
+			padding-right: 10px;
+			font-size: 1.5em;
+			text-align: right;
+			border: none;
+			background-color: $accent;
 		}
 	}
-	.row{
+	.row {
 		width: 100%;
 		margin: auto 5px;
-		
-		.btn{
+
+		.btn {
 			width: 40px;
 			height: 40px;
 			margin: 6px;
 			background-color: $primary;
 			color: $white;
-			border-radius: 5%;
+			border-radius: 2%;
 		}
-		#equals, #sum{
-			background-color: $accent;
+		.long {
+			width: 92px;
 		}
-		#clear{
-			background-color: $clear;
-		}
+	}
+	#sum {
+		background-color: $accent;
+	}
+	#clear {
+		background-color: $clear;
+		width: 92px;
+	}
+	#equals{
+		background-color: $equals;
+		width: 92px;
 	}
 }
