@@ -1,0 +1,83 @@
+body {
+  background: url("http://res.cloudinary.com/drwqdcmyx/image/upload/v1504033374/ZcAODIU_j7bjfn.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.container {
+  background-color: rgba(236, 240, 241, 0.85);
+  position: relative;
+  margin: 10% auto;
+  width: 300px;
+  height: 450px;
+  border: 1px solid #bdc3c7;
+  box-shadow: 3px 3px 8px 0px #2E2605;
+}
+.container .image {
+  background: url("http://res.cloudinary.com/drwqdcmyx/image/upload/v1504033373/Rick_and_Morty_logo_jmfkpc.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  min-width: 200px;
+  width: 100%;
+  height: 30%;
+  margin-top: 10px;
+}
+.container .form {
+  margin-top: 25px;
+  text-align: center;
+}
+.container .form .line {
+  width: 180px;
+  height: 1px;
+  background-color: #bdc3c7;
+  margin-left: 45px;
+}
+.container .form .fa-envelope {
+  margin-right: 4px;
+  color: #00afc7;
+}
+.container .form .fa-lock, .container .form .fa-user {
+  color: #00afc7;
+}
+.container .form input {
+  padding: 20px 10px 4px 0px;
+  margin-left: 6px;
+  background-color: rgba(236, 240, 241, 0);
+  border: none;
+  color: #546E7A;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 200px;
+}
+.container .form .lock {
+  margin-left: 8px;
+}
+.container .form .user {
+  margin-left: 7px;
+}
+.container .btn-default {
+  position: absolute;
+  padding-top: 4px;
+  height: 30px;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00afc7;
+  border: 1.3px solid #546E7A;
+  color: #fff;
+  font-family: 'Walter Turncoat', sans-serif;
+  box-shadow: 0px 0px 3px 2px #57bb5a;
+}
+.container .btn-default:hover {
+  box-shadow: 0px 0px 5px 5px #57bb5a;
+}
+.container .hidden {
+  background-color: rgba(236, 240, 241, 0);
+  margin-top: 25px;
+  text-align: center;
+  display: none;
+}
