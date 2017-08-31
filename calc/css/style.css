@@ -1,4 +1,4 @@
-/* need to add funcitonality */
+/* need to add full functionality */
 body {
   background-color: #2c3e50;
 }
@@ -14,6 +14,7 @@ body {
 .container {
   position: relative;
   margin-top: 100px;
+  margin-bottom: 150px;
   width: 220px;
   height: 372px;
   background-color: #34495e;
@@ -71,4 +72,26 @@ body {
 .container #equals {
   background-color: #425C76;
   width: 92px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: #34495e;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+}
+footer .fa-github {
+  padding-left: 10px;
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+footer .fa-github:focus {
+  color: #fff;
+  outline: none;
 }

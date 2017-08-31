@@ -1,4 +1,4 @@
-/* need to add funcitonality */
+/* need to add full functionality */
 
 @mixin long-shadow($length: 20px, $color: #333, $shadow-type: 'text') {
 	$string: '';
@@ -33,6 +33,7 @@ body {
 .container {
 	position: relative;
 	margin-top: 100px;
+	margin-bottom: 150px;
 	width: 220px;
 	height: 372px;
 	background-color: $primary;
@@ -93,4 +94,26 @@ body {
 		background-color: $equals;
 		width: 92px;
 	}
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+	height: 60px;
+  text-align: center;
+  background-color: $primary;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  .fa-github {
+    padding-left: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 10px;
+    &:focus {
+      color: #fff;
+      outline: none;
+    }
+  }
 }
