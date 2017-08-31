@@ -22,6 +22,7 @@ body {
 	height: 450px;
 	border: 1px solid $silver;
 	box-shadow: 3px 3px 8px 0px #2E2605;
+	overflow: hidden;
 
 	.image {
 		background: url("http://res.cloudinary.com/drwqdcmyx/image/upload/v1504033373/Rick_and_Morty_logo_jmfkpc.png");
@@ -74,24 +75,46 @@ body {
 		position: absolute;
 		padding-top: 4px;
 		height: 30px;
-		top: 88%;
-		left: 50%;
+		top: 380px;
+		left: 150px;
 		transform: translate(-50%, -50%);
 		background-color: $blue;
 		border: 1.3px solid $black;
-		color: #fff;		
+		color: #fff;
 		font-family: 'Walter Turncoat', sans-serif;
 		box-shadow: 0px 0px 3px 2px $green;
-		&:hover{
+		&:hover {
 			box-shadow: 0px 0px 5px 5px $green;
 		}
 	}
-	
 
 	.hidden {
+		position: absolute;
 		background-color: rgba(236, 240, 241, 0);
-		margin-top: 25px;
-		text-align: center;
+		top: 170px;
+		left: 0;
+		height: 300px;
+		width: 100%;
+		z-index: 5;
 		display: none;
+	}
+	.text {
+		position: absolute;
+		text-align: center;
+		top: 40px;
+		left: 65px;
+		color: $blue;
+		font-family: 'Walter Turncoat', sans-serif;
+		text-shadow: 1px 1px 2px $green;
+	}
+	.c {
+		position: absolute;
+		top: 150px;
+		left: 120px;
+		color: $blue;
+		text-shadow: 0px 0px 5px $green;
+		&:hover {
+			text-shadow: 0px 0px 7px $green;
+		}
 	}
 }
