@@ -48,22 +48,23 @@ body {
 		margin-bottom: 6px;
 		text-align: right;
 		overflow: hidden;
-		
-		#history {
+
+		.history {
 			color: $white;
 			margin-right: 10px;
 			text-align: right;
-			border: none;
+			height: 20px;
+
 			background-color: $accent;
 		}
-		#result {
+		.result {
 			color: $white;
-			height: 70px;
+			height: 60px;
+			margin-top: 30px;
 			margin-left: -100px;
 			padding-right: 10px;
 			font-size: 1.5em;
 			text-align: right;
-			border: none;
 			background-color: $accent;
 		}
 	}
@@ -90,30 +91,30 @@ body {
 		background-color: $clear;
 		width: 92px;
 	}
-	#equals{
+	#equals {
 		background-color: $equals;
 		width: 92px;
 	}
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 	height: 60px;
-  text-align: center;
-  background-color: $primary;
-  color: #fff;
-  font-family: "Roboto Condensed", sans-serif;
-  .fa-github {
-    padding-left: 10px;
-    color: #fff;
-    font-size: 1.5em;
-    margin-top: 10px;
-    &:focus {
-      color: #fff;
-      outline: none;
-    }
-  }
+	text-align: center;
+	background-color: $primary;
+	color: #fff;
+	font-family: "Roboto Condensed", sans-serif;
+	.fa-github {
+		padding-left: 10px;
+		color: #fff;
+		font-size: 1.5em;
+		margin-top: 10px;
+		&:focus {
+			color: #fff;
+			outline: none;
+		}
+	}
 }
