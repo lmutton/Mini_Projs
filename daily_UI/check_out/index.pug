@@ -1,0 +1,59 @@
+
+.container
+	.line
+		.square
+			span Login
+		.square
+			span Card Details
+		.square
+			span Confirm	
+	.checkout
+		h2 Coconut Products
+		h4 Total: <span id="p-num">350kr</span>	 
+		img.image(src="http://res.cloudinary.com/drwqdcmyx/image/upload/v1504376493/rsz_kkkk_trrabr.png" alt="coconut")
+		form
+			.fa.fa-user
+				input.user(
+				value='cardholder...'
+				readonly="readonly"   
+				onfocus="this.blur();" 
+				tabindex="-1"          
+				)
+
+			.fa.fa-credit-card
+				input.kort(
+				value='cardnumber...'
+				readonly="readonly"   
+				onfocus="this.blur();" 
+				tabindex="-1" 
+				)
+
+			.fa.fa-calendar
+				input.mmyy(
+				value='mm/yy'
+				readonly="readonly"   
+				onfocus="this.blur();" 
+				tabindex="-1" 
+				)
+
+			.fa.fa-lock
+					input.cvc(
+					value='cvc'
+					readonly="readonly"   
+					onfocus="this.blur();" 
+					tabindex="-1" 
+					)
+		.buttons
+			button.btn.cancel cancel
+			button.btn.buy continue
+		
+	.wallet
+		.points-title 
+			h2 Coconuts:
+			h4 You currently have <span id="p-num">65</span> Coconuts saved!
+			button.btn.use use
+		.tab
+			button.btn.tab-text points
+			button.btn.hidden-text points
+	
+	

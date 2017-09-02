@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Check out UI</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Fira+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<div class="container">
+  <div class="line">
+    <div class="square"><span>Login</span></div>
+    <div class="square"><span>Card Details</span></div>
+    <div class="square"><span>Confirm	</span></div>
+  </div>
+  <div class="checkout">
+    <h2>Coconut Products</h2>
+    <h4>Total: <span id="p-num">350kr</span>	 </h4><img class="image" src="http://res.cloudinary.com/drwqdcmyx/image/upload/v1504376493/rsz_kkkk_trrabr.png" alt="coconut"/>
+    <form>
+      <div class="fa fa-user">
+        <input class="user" value="cardholder..." readonly="readonly" onfocus="this.blur();" tabindex="-1"/>
+      </div>
+      <div class="fa fa-credit-card">
+        <input class="kort" value="cardnumber..." readonly="readonly" onfocus="this.blur();" tabindex="-1"/>
+      </div>
+      <div class="fa fa-calendar">
+        <input class="mmyy" value="mm/yy" readonly="readonly" onfocus="this.blur();" tabindex="-1"/>
+      </div>
+      <div class="fa fa-lock">
+        <input class="cvc" value="cvc" readonly="readonly" onfocus="this.blur();" tabindex="-1"/>
+      </div>
+    </form>
+    <div class="buttons">
+      <button class="btn cancel">cancel</button>
+      <button class="btn buy">continue</button>
+    </div>
+  </div>
+  <div class="wallet">
+    <div class="points-title"> 
+      <h2>Coconuts:</h2>
+      <h4>You currently have <span id="p-num">65</span> Coconuts saved!</h4>
+      <button class="btn use">use</button>
+    </div>
+    <div class="tab">
+      <button class="btn tab-text">points</button>
+      <button class="btn hidden-text">points</button>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
