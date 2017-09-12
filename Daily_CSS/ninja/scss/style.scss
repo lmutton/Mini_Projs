@@ -1,0 +1,273 @@
+@mixin w-h($width, $height) {
+	width: $width;
+	height: $height;
+}
+@mixin l-t($margin-left, $margin-top) {
+	margin-left: $margin-left;
+	margin-top: $margin-top;
+}
+
+$black: #0B0305;
+$red: #AF1D3E;
+
+@-webkit-keyframes blink {
+	0% {
+		-webkit-transform: scaleX(2) scaleY(2);
+	}
+	1% {
+		-webkit-transform: scaleX(1.3) scaleY(0.1);
+	}
+	2% {
+		-webkit-transform: scaleX(1) scaleY(1);
+	}
+	60% {
+		-webkit-transform: scaleX(1) scaleY(1);
+	}
+	61% {
+		-webkit-transform: scaleX(1.3) scaleY(0.1);
+	}
+	62% {
+		-webkit-transform: scaleX(1) scaleY(1);
+	}
+	100% {
+		-webkit-transform: scaleX(1) scaleY(1);
+	}
+}
+
+@keyframes blink {
+	0% {
+		transform: scaleX(2) scaleY(2);
+	}
+	1% {
+		transform: scaleX(1.3) scaleY(0.1);
+	}
+	2% {
+		transform: scaleX(1) scaleY(1);
+	}
+	60% {
+		transform: scaleX(1) scaleY(1);
+	}
+	61% {
+		transform: scaleX(1) scaleY(0.1);
+	}
+	62% {
+		transform: scaleX(1) scaleY(1);
+	}
+	100% {
+		transform: scaleX(1) scaleY(1);
+	}
+}
+
+body {
+	background-color: $black;
+	font-family: 'Saira Extra Condensed', sans-serif;
+}
+.container {
+	background-color: #C2CFD8;
+	position: relative;
+	@include w-h(500px, 500px);
+	border-radius: 50%;
+	margin: 200px auto;
+	h1 {
+		position: absolute;
+		@include l-t(26%, 15%);
+	}
+	h2 {
+		position: absolute;
+		@include l-t(40%, 85%);
+		z-index: 2;
+	}
+	.ninja {
+		@include w-h(200px, 400px);
+		margin-left: 140px;
+		padding-top: 110px;
+
+		.head {
+			background-color: $black;
+			position: absolute;
+			@include w-h(25%, 35%);
+			@include l-t(8%, 10%);
+			-webkit-border-radius: 50% 50% 50% 50% / 60% 10% 20% 20%;
+			-moz-border-radius: 50% 50% 50% 50% / 60% 10% 20% 20%;
+			border-radius: 50% 50% 50% 50% / 60% 10% 20% 20%;
+			box-shadow: inset 5px 0px 10px -2px rgba(225, 225, 225, 0.5);
+			.mask {
+				@include w-h(60%, 16%);
+				@include l-t(10%, 45%);
+				position: absolute;
+				background-color: #E7B2B8;
+				-webkit-border-radius: 90% 30% 30% 90% / 40% 10% 60% 80%;
+				-moz-border-radius: 90% 30% 30% 90% / 40% 10% 60% 80%;
+				border-radius: 90% 30% 30% 90% / 40% 10% 60% 80%;
+				box-shadow: inset -1px 0 1px 2px rgba(115, 89, 92, 0.6),
+					inset -3px -3px 15px 2px rgba(187, 145, 150, 0.3);
+				.hidden-l{
+					@include w-h(11%, 8%);
+					border-radius: 100%;
+					@include l-t(14%, 14%);
+					position: absolute;
+					background-color: green;
+					z-index: 5;
+				}
+				.hidden-r {
+					@include w-h(11%, 9%);
+					border-radius: 100%;
+					@include l-t(40%, 15%);
+					position: absolute;
+					background-color: $black;
+					z-index: 5;
+				}
+				.eye-l {
+					@include w-h(10%, 28%);
+					border-radius: 100%;
+					@include l-t(15%, 11%);
+					position: absolute;
+					background-color: $black;
+					zindex: 3;
+					webkit-animation-name: blink;
+					-webkit-animation-duration: 3s;
+					-webkit-animation-iteration-count: infinite;
+					-webkit-transform-origin: 50%;
+
+					animation-name: blink;
+					animation-duration: 3s;
+					animation-iteration-count: infinite;
+					transform-origin: 50%;
+					.pupil {
+						@include w-h(10%, 28%);
+						border-radius: 100%;
+						@include l-t(15%, 11%);
+						position: absolute;
+						background-color: #fff;
+						zindex: 3;
+					}
+				}
+				.eye-r {
+					@include w-h(11%, 31%);
+					border-radius: 100%;
+					@include l-t(40%, 11%);
+					position: absolute;
+					background-color: $black;
+					zindex: 3;
+					webkit-animation-name: blink;
+					-webkit-animation-duration: 3s;
+					-webkit-animation-iteration-count: infinite;
+					-webkit-transform-origin: 50%;
+
+					animation-name: blink;
+					animation-duration: 3s;
+					animation-iteration-count: infinite;
+					transform-origin: 50%;
+					.pupil {
+						@include w-h(10%, 28%);
+						border-radius: 100%;
+						@include l-t(15%, 11%);
+						position: absolute;
+						background-color: #fff;
+						zindex: 3;
+					}
+				}
+			}
+			.belt {
+				@include w-h(98%, 10%);
+				@include l-t(0%, 100%);
+				background-color: $red;
+				position: absolute;
+				border-top: 2px solid #590E1F;
+				border-right: 2px solid #590E1F;
+				border-bottom: 2px solid #590E1F;
+				webkit-border-radius: 90% 30% 30% 90% / 30% 10% 40% 50%;
+				-moz-border-radius: 90% 30% 30% 90% / 30% 10% 40% 50%;
+				border-radius: 90% 30% 30% 90% / 30% 10% 40% 50%;
+				-ms-transform: rotate(2deg);
+				-webkit-transform: rotate(2deg);
+				transform: rotate(2deg);
+				box-shadow: inset 10px 0 10px -5px rgba(250, 186, 200, 0.8);
+				.knott {
+					@include w-h(20%, 100%);
+					@include l-t(12%, -2%);
+					background-color: $red;
+					position: absolute;
+					border: 2px solid #590E1F;
+					webkit-border-radius: 90% 90% 90% 90% / 100% 100% 50% 50%;
+					-moz-border-radius: 90% 90% 90% 90% / 100% 100% 50% 50%;
+					border-radius: 90% 90% 90% 90% / 100% 100% 50% 50%;
+					-ms-transform: rotate(3deg);
+					-webkit-transform: rotate(3deg);
+					transform: rotate(3deg);
+					box-shadow: inset 7px 4px 10px -6px rgba(250, 186, 200, 0.8);
+				}
+				.ribbon {
+					@include w-h(5%, 100%);
+					@include l-t(13%, 10%);
+					background-color: $red;
+					position: absolute;
+					border-left: 2px solid #590E1F;
+					border-right: 2px solid #590E1F;
+					border-bottom: 2px solid #590E1F;
+					-ms-transform: rotate(20deg);
+					-webkit-transform: rotate(20deg);
+					transform: rotate(20deg);
+				}
+				.ribbontwo {
+					@include w-h(5%, 100%);
+					@include l-t(24%, 11%);
+					background-color: $red;
+					position: absolute;
+					border-left: 2px solid #590E1F;
+					border-right: 2px solid #590E1F;
+					border-bottom: 2px solid #590E1F;
+					-ms-transform: rotate(-20deg);
+					-webkit-transform: rotate(-20deg);
+					transform: rotate(-20deg);
+				}
+			}
+		}
+		.triangle {
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-top: 20px solid transparent;
+			border-bottom: 40px solid transparent;
+			border-left: 50px solid $black;
+			@include l-t(29%, 10%);
+			-ms-transform: rotate(7deg); /* IE 9 */
+			-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+			transform: rotate(-11deg);
+		}
+		.leg-l {
+			@include w-h(1.8%, 7%);
+			@include l-t(17%, 43%);
+			background-color: $black;
+			position: absolute;
+			border-radius: 5px;
+			.foot {
+				@include l-t(-350%, 220%);
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-top: 15px solid transparent;
+				border-bottom: 0px solid transparent;
+				border-right: 35px solid $black;
+				z-index: 3;
+			}
+		}
+		.leg-r {
+			@include w-h(2%, 9%);
+			@include l-t(25%, 43%);
+			background-color: $black;
+			position: absolute;
+			border-radius: 5px;
+			.foot {
+				@include l-t(-340%, 267%);
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-top: 18px solid transparent;
+				border-bottom: 0px solid transparent;
+				border-right: 38px solid $black;
+				z-index: 3;
+			}
+		}
+	}
+}

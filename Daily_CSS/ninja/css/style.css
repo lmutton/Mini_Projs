@@ -1,0 +1,293 @@
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scaleX(2) scaleY(2);
+  }
+  1% {
+    -webkit-transform: scaleX(1.3) scaleY(0.1);
+  }
+  2% {
+    -webkit-transform: scaleX(1) scaleY(1);
+  }
+  60% {
+    -webkit-transform: scaleX(1) scaleY(1);
+  }
+  61% {
+    -webkit-transform: scaleX(1.3) scaleY(0.1);
+  }
+  62% {
+    -webkit-transform: scaleX(1) scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleX(1) scaleY(1);
+  }
+}
+@keyframes blink {
+  0% {
+    transform: scaleX(2) scaleY(2);
+  }
+  1% {
+    transform: scaleX(1.3) scaleY(0.1);
+  }
+  2% {
+    transform: scaleX(1) scaleY(1);
+  }
+  60% {
+    transform: scaleX(1) scaleY(1);
+  }
+  61% {
+    transform: scaleX(1) scaleY(0.1);
+  }
+  62% {
+    transform: scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+body {
+  background-color: #0B0305;
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.container {
+  background-color: #C2CFD8;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  margin: 200px auto;
+}
+.container h1 {
+  position: absolute;
+  margin-left: 26%;
+  margin-top: 15%;
+}
+.container h2 {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 85%;
+  z-index: 2;
+}
+.container .ninja {
+  width: 200px;
+  height: 400px;
+  margin-left: 140px;
+  padding-top: 110px;
+}
+.container .ninja .head {
+  background-color: #0B0305;
+  position: absolute;
+  width: 25%;
+  height: 35%;
+  margin-left: 8%;
+  margin-top: 10%;
+  -webkit-border-radius: 50% 50% 50% 50% / 60% 10% 20% 20%;
+  -moz-border-radius: 50% 50% 50% 50% / 60% 10% 20% 20%;
+  border-radius: 50% 50% 50% 50% / 60% 10% 20% 20%;
+  box-shadow: inset 5px 0px 10px -2px rgba(225, 225, 225, 0.5);
+}
+.container .ninja .head .mask {
+  width: 60%;
+  height: 16%;
+  margin-left: 10%;
+  margin-top: 45%;
+  position: absolute;
+  background-color: #E7B2B8;
+  -webkit-border-radius: 90% 30% 30% 90% / 40% 10% 60% 80%;
+  -moz-border-radius: 90% 30% 30% 90% / 40% 10% 60% 80%;
+  border-radius: 90% 30% 30% 90% / 40% 10% 60% 80%;
+  box-shadow: inset -1px 0 1px 2px rgba(115, 89, 92, 0.6), inset -3px -3px 15px 2px rgba(187, 145, 150, 0.3);
+}
+.container .ninja .head .mask .hidden-l {
+  width: 11%;
+  height: 8%;
+  border-radius: 100%;
+  margin-left: 14%;
+  margin-top: 14%;
+  position: absolute;
+  background-color: green;
+  z-index: 5;
+}
+.container .ninja .head .mask .hidden-r {
+  width: 11%;
+  height: 9%;
+  border-radius: 100%;
+  margin-left: 40%;
+  margin-top: 15%;
+  position: absolute;
+  background-color: #0B0305;
+  z-index: 5;
+}
+.container .ninja .head .mask .eye-l {
+  width: 10%;
+  height: 28%;
+  border-radius: 100%;
+  margin-left: 15%;
+  margin-top: 11%;
+  position: absolute;
+  background-color: #0B0305;
+  zindex: 3;
+  webkit-animation-name: blink;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50%;
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 50%;
+}
+.container .ninja .head .mask .eye-l .pupil {
+  width: 10%;
+  height: 28%;
+  border-radius: 100%;
+  margin-left: 15%;
+  margin-top: 11%;
+  position: absolute;
+  background-color: #fff;
+  zindex: 3;
+}
+.container .ninja .head .mask .eye-r {
+  width: 11%;
+  height: 31%;
+  border-radius: 100%;
+  margin-left: 40%;
+  margin-top: 11%;
+  position: absolute;
+  background-color: #0B0305;
+  zindex: 3;
+  webkit-animation-name: blink;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50%;
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 50%;
+}
+.container .ninja .head .mask .eye-r .pupil {
+  width: 10%;
+  height: 28%;
+  border-radius: 100%;
+  margin-left: 15%;
+  margin-top: 11%;
+  position: absolute;
+  background-color: #fff;
+  zindex: 3;
+}
+.container .ninja .head .belt {
+  width: 98%;
+  height: 10%;
+  margin-left: 0%;
+  margin-top: 100%;
+  background-color: #AF1D3E;
+  position: absolute;
+  border-top: 2px solid #590E1F;
+  border-right: 2px solid #590E1F;
+  border-bottom: 2px solid #590E1F;
+  webkit-border-radius: 90% 30% 30% 90% / 30% 10% 40% 50%;
+  -moz-border-radius: 90% 30% 30% 90% / 30% 10% 40% 50%;
+  border-radius: 90% 30% 30% 90% / 30% 10% 40% 50%;
+  -ms-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
+  box-shadow: inset 10px 0 10px -5px rgba(250, 186, 200, 0.8);
+}
+.container .ninja .head .belt .knott {
+  width: 20%;
+  height: 100%;
+  margin-left: 12%;
+  margin-top: -2%;
+  background-color: #AF1D3E;
+  position: absolute;
+  border: 2px solid #590E1F;
+  webkit-border-radius: 90% 90% 90% 90% / 100% 100% 50% 50%;
+  -moz-border-radius: 90% 90% 90% 90% / 100% 100% 50% 50%;
+  border-radius: 90% 90% 90% 90% / 100% 100% 50% 50%;
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+  box-shadow: inset 7px 4px 10px -6px rgba(250, 186, 200, 0.8);
+}
+.container .ninja .head .belt .ribbon {
+  width: 5%;
+  height: 100%;
+  margin-left: 13%;
+  margin-top: 10%;
+  background-color: #AF1D3E;
+  position: absolute;
+  border-left: 2px solid #590E1F;
+  border-right: 2px solid #590E1F;
+  border-bottom: 2px solid #590E1F;
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+.container .ninja .head .belt .ribbontwo {
+  width: 5%;
+  height: 100%;
+  margin-left: 24%;
+  margin-top: 11%;
+  background-color: #AF1D3E;
+  position: absolute;
+  border-left: 2px solid #590E1F;
+  border-right: 2px solid #590E1F;
+  border-bottom: 2px solid #590E1F;
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+.container .ninja .triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 50px solid #0B0305;
+  margin-left: 29%;
+  margin-top: 10%;
+  -ms-transform: rotate(7deg);
+  /* IE 9 */
+  -webkit-transform: rotate(7deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-11deg);
+}
+.container .ninja .leg-l {
+  width: 1.8%;
+  height: 7%;
+  margin-left: 17%;
+  margin-top: 43%;
+  background-color: #0B0305;
+  position: absolute;
+  border-radius: 5px;
+}
+.container .ninja .leg-l .foot {
+  margin-left: -350%;
+  margin-top: 220%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 35px solid #0B0305;
+  z-index: 3;
+}
+.container .ninja .leg-r {
+  width: 2%;
+  height: 9%;
+  margin-left: 25%;
+  margin-top: 43%;
+  background-color: #0B0305;
+  position: absolute;
+  border-radius: 5px;
+}
+.container .ninja .leg-r .foot {
+  margin-left: -340%;
+  margin-top: 267%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 38px solid #0B0305;
+  z-index: 3;
+}
