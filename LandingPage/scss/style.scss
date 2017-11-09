@@ -1,0 +1,84 @@
+$red: #c0392b;
+
+body {
+	background: url("http://res.cloudinary.com/drwqdcmyx/image/upload/v1510217570/KEPLER_dfsyx3.jpg")
+		no-repeat center center fixed;
+	background-size: cover;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+	.title {
+		color: #fff;
+		letter-spacing: 5px;
+		margin: 20px;
+		max-width: 500px;
+		h3 {
+			margin-bottom: 0;
+			max-width: 340px;			
+			.hl {
+				color: $red;
+			}
+		}
+		h1 {
+			font-size: 4em;
+			margin: 0;	
+			.hl {
+				color: $red;
+			}
+		}
+	}
+
+button{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		background-color: $red;
+		border: none;
+		padding: 10px 30px 10px 30px;
+		box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.6);
+		&:hover{
+			background-color: #fff;
+			color: $red;
+		}
+	}
+
+
+footer{
+	color: #fff;
+	position: absolute;
+	left: 20px;
+	right: 0;
+	bottom: 0;
+	opacity: 0.7;
+	img{
+		position: absolute;
+		right: 10px;
+		height: 25px;
+		
+	}
+}
+
+
+@media screen and (max-width: 760px){
+	h3{
+		font-size: 0.9em;
+	}
+	h1{
+		font-size: 2.2em !important;
+	}
+	h2{
+		font-size: 1.2em;
+	}
+	footer{
+		left: 0px;
+		text-align: center;
+		img{
+			padding-top: 5px;
+			float: none;
+      position: static;
+      width: auto;
+			height: 15px;
+		}
+	}
+}
